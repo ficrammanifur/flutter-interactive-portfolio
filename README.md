@@ -588,7 +588,7 @@ flutter-interactive-portfolio/
 
 ## 📄 Lisensi
 
-Project ini menggunakan **MIT License** - Lihat file [LICENSE](LICENSE) untuk detail lengkap.
+Project ini menggunakan **MIT License** - Lihat file [LICENSE](./LICENSE) untuk detail lengkap.
 
 ---
 
