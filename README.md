@@ -15,7 +15,7 @@
 
 ## 📋 Daftar Isi
 
-- [Mengapa Flutter untuk Portfolio?](#mengapa-flutter-untuk-portfolio)
+- [Mengapa Flutter untuk Portfolio](#mengapa-flutter-untuk-portfolio)
 - [Demo Singkat](#demo-singkat)
 - [Fitur Utama](#fitur-utama)
 - [Tech Stack & Dependencies](#tech-stack--dependencies)
@@ -31,6 +31,7 @@
 - [Kontribusi](#kontribusi)
 - [Pengembang](#pengembang)
 - [Lisensi](#lisensi)
+
 
 ---
 
