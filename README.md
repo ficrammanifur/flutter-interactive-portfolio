@@ -591,7 +591,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](./LICENSE
 
 **[Ficrammanifur]** - *Portfolio Developer*
 - GitHub: [@ficrammanifur](https://github.com/ficrammanifur)
-- Email: your.email@example.com
+- Email: ficramm@example.com
 - Portfolio: [portfolio.com](https://portfolio.com)
 
 ---
