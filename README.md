@@ -7,565 +7,550 @@
   <img src="https://img.shields.io/badge/Modern-Design-orange?style=for-the-badge" />
 </p>
 
----
-
-## 🎯 Overview
-
-**Flutter Interactive Portfolio** adalah aplikasi web portfolio modern berbasis Flutter yang menampilkan proyek-proyek berkualitas tinggi dengan antarmuka interaktif, animasi 3D yang memukau, dan desain responsif. Portfolio ini dirancang khusus untuk menampilkan keahlian dalam mobile development, web development, AI & Robotics, dan IoT.
-
-Fitur unggulan termasuk splash screen dengan 3D cube rotation, navbar yang dinamis dengan dark/light mode, hero section dengan typing animation, project filtering system, dan contact form yang terintegrasi.
+<p align="center">
+  <em>Portfolio web interaktif berbasis Flutter dengan 3D splash screen, dark/light mode, project filtering, dan animasi smooth yang menampilkan skill teknis dan project showcase profesional.</em>
+</p>
 
 ---
 
-## ✨ Fitur Utama
+## 📋 Daftar Isi
 
-### 🎪 Splash Screen
-- **3D Cube Rotation** - Animasi kubus 3D yang berputar pada berbagai sumbu untuk menciptakan tech vibe
-- **Scale Animation** - Efek zoom in dan zoom out yang smooth untuk transisi visual yang menawan
-- **Loading Bar** - Progress indicator dengan animasi halus
-- **Auto Navigation** - Navigasi otomatis ke halaman utama setelah 3 detik
-- **Fade Out Effect** - Transisi fade out yang elegan saat berpindah ke homepage
-
-### 🧭 Navbar & Navigation
-- **Responsive Design** - Menyesuaikan dengan ukuran layar desktop dan mobile
-- **Dark/Light Mode Toggle** - Tema adaptif dengan smooth transitions
-- **Smooth Navigation** - Navigasi antar halaman dengan animasi yang mulus
-- **Active Link Indicator** - Menunjukkan halaman aktif dengan visual feedback
-
-### 🌟 Hero Section
-- **Typing Animation** - Teks yang diketik secara otomatis menciptakan efek dinamis
-- **Call-to-Action Button** - Button "See Project" yang prominent dan mudah diklik
-- **Gradient Background** - Background yang menarik dengan color scheme profesional
-- **Responsive Layout** - Optimal di semua ukuran layar
-
-### 📁 Projects Management
-- **Category Filtering** - Filter proyek berdasarkan kategori (All, Mobile, Web, AI & Robotics, AI & ML, IoT)
-- **Animated Cards** - Kartu proyek dengan hover effects dan transitions
-- **Project Modal** - Detail proyek lengkap dengan screenshot, deskripsi, tech stack, dan link
-- **Smooth Transitions** - Animasi kategori filter yang halus
-
-### 👤 About & Skills
-- **Personal Bio** - Penjelasan lengkap tentang latar belakang dan visi
-- **Skill Badges** - 9 badge skill dengan hover animation dan tooltips
-- **Tech Stack Showcase** - Display teknologi dan tools yang dikuasai
-
-### 📋 Focus Page
-- **Tech Stack Display** - Daftar teknologi yang sedang fokus dipelajari
-- **Areas of Interest** - Bidang utama minat profesional
-
-### 📞 Contact Page
-- **Contact Information** - Email, telepon, dan alamat
-- **Social Links** - Integrasi dengan WhatsApp, GitHub, Instagram
-- **Contact Form** - Form komunikasi dengan validasi input
-- **Professional Layout** - Desain kontak yang elegan dan mudah diakses
+- [Mengapa Flutter untuk Portfolio?](#mengapa-flutter-untuk-portfolio)
+- [Demo Singkat](#demo-singkat)
+- [Fitur Utama](#fitur-utama)
+- [Tech Stack & Dependencies](#tech-stack--dependencies)
+- [Arsitektur Aplikasi](#arsitektur-aplikasi)
+- [Alur Kerja & Navigation](#alur-kerja--navigation)
+- [Instalasi](#instalasi)
+- [Cara Menjalankan](#cara-menjalankan)
+- [Kustomisasi](#kustomisasi)
+- [Deployment](#deployment)
+- [Performance Tips](#performance-tips)
+- [Troubleshooting](#troubleshooting)
+- [Struktur Folder](#struktur-folder)
+- [Kontribusi](#kontribusi)
+- [Pengembang](#pengembang)
+- [Lisensi](#lisensi)
 
 ---
 
-## 📋 Requirements
+## 🚀 Mengapa Flutter untuk Portfolio?
 
-### Development Environment
-- Flutter SDK (>=3.10.0)
-- Dart SDK (>=3.0.0)
-- Chrome Browser (untuk web development)
-- Android Studio / VS Code / IntelliJ IDEA
-- Git
+### Keunggulan Flutter Web Portfolio
 
-### System Requirements
-- RAM minimal 4GB
-- Storage minimal 2GB untuk Flutter SDK
-- Koneksi internet untuk dependencies
+| Fitur | Web Standar | Flutter Web | Keuntungan |
+|-------|-------------|-------------|-----------|
+| **Development Speed** | Lambat | ⚡ Cepat dengan hot reload | 2-3x lebih cepat |
+| **Performance** | Bervariasi | Sangat optimized | 60 FPS animations |
+| **Code Sharing** | Tidak | Ya (mobile & web) | One codebase |
+| **Styling** | CSS kompleks | Dart-based styling | Lebih readable |
+| **Animation** | Library eksternal | Built-in & powerful | Smooth 60 FPS |
+| **Responsiveness** | Manual media query | Auto-responsive | Responsive by default |
+| **State Management** | Complex | Sederhana | Provider, Riverpod, dll |
 
-### Dependencies
-```yaml
-dependencies:
-  flutter:
-    sdk: flutter
-  cupertino_icons: ^1.0.2
-  flutter_cube: ^0.0.5           # 3D cube rendering
-  google_fonts: ^6.0.0           # Google Fonts integration
-  url_launcher: ^6.2.0           # URL handling
-  flutter_svg: ^2.0.8            # SVG support
-  http: ^1.1.0                   # HTTP requests
-  flutter_animate: ^4.2.0        # Smooth animations
-  provider: ^6.1.0               # State management
+### Keunggulan Sistem Portfolio Flutter
 
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  flutter_lints: ^3.0.0
+✓ **3D Splash Screen** - Modern tech vibe dengan rotating 3D cube  
+✓ **Dark/Light Mode** - Seamless theme switching dengan Provider  
+✓ **Animasi Smooth** - 60 FPS animations dengan flutter_animate  
+✓ **Project Filtering** - Filter by category dengan smooth transitions  
+✓ **Typing Animation** - Hero section dengan dynamic typing effect  
+✓ **Responsive Design** - Mobile, tablet, desktop - semua supported  
+✓ **Contact Integration** - Hubungi langsung via WhatsApp, GitHub, Instagram  
+✓ **Fast Performance** - Single page dengan pre-loading assets  
+
+---
+
+## 📸 Demo Singkat
+
+> Portfolio modern dengan 3D intro, smooth animations, project showcase, dan contact integration.
+
+<p align="center">
+  <img src="/assets/images/portfolio-demo.gif?height=400&width=700&query=flutter%20portfolio%20animation%20demo" alt="Portfolio Demo" width="700"/><br/>
+  <em>Flutter Portfolio Showcase - Complete User Journey</em>
+</p>
+
+---
+
+## 🎯 Fitur Utama
+
+| Fitur | Deskripsi | Teknologi | Status |
+|-------|-----------|-----------|--------|
+| **3D Splash Screen** | Rotating 3D cube dengan scale animation | flutter_cube + flutter_animate | ✅ Aktif |
+| **Typing Animation** | Hero section dengan typing effect | Custom animation controller | ✅ Aktif |
+| **Dark/Light Mode** | Seamless theme switching | Provider state management | ✅ Aktif |
+| **Project Filtering** | Filter by category (All, Mobile, Web, AI/ML, IoT) | ListView + Filter logic | ✅ Aktif |
+| **Project Modal** | Click card untuk lihat detail lengkap | Custom dialog widget | ✅ Aktif |
+| **Navigation System** | Navbar + routes navigation | MaterialApp routes | ✅ Aktif |
+| **Responsive Design** | Mobile, tablet, desktop optimization | MediaQuery + Flex layout | ✅ Aktif |
+| **Social Integration** | Links ke WhatsApp, GitHub, Instagram | url_launcher package | ✅ Aktif |
+| **Contact Form** | Contact page dengan form validation | Custom form widget | ✅ Aktif |
+| **Google Fonts** | Modern typography dengan Google Fonts | google_fonts package | ✅ Aktif |
+
+---
+
+## 💻 Tech Stack & Dependencies
+
+### Flutter & Dart
+
+| Library | Versi | Fungsi |
+|---------|-------|--------|
+| **flutter** | 3.10.0+ | Framework utama |
+| **dart** | 3.0.0+ | Programming language |
+| **provider** | 6.1.0 | State management & theme |
+| **flutter_cube** | 0.0.5 | 3D cube rendering |
+| **flutter_animate** | 4.2.0 | Smooth animations |
+| **google_fonts** | 6.0.0 | Modern typography |
+| **flutter_svg** | 2.0.8 | SVG icon support |
+| **url_launcher** | 6.2.0 | Link & social media |
+| **http** | 1.1.0 | API calls (opsional) |
+| **cupertino_icons** | 1.0.2 | iOS-style icons |
+
+---
+
+## 🏗️ Arsitektur Aplikasi
+
+### Diagram Struktur Sistem
+
+```
+              ┌─────────────────────────────┐
+              │  Flutter Portfolio App      │
+              │  (MaterialApp + Provider)   │
+              └─────────────┬───────────────┘
+                            │
+         ┌──────────────────┼──────────────────┐
+         │                  │                  │
+         ▼                  ▼                  ▼
+    ┌────────────┐   ┌───────────┐    ┌──────────────┐
+    │   Navbar   │   │   Pages   │    │ ThemeProvider│
+    │            │   │           │    │              │
+    └────────────┘   ├─ Home     │    ├─ Light Theme │
+                     ├─ Projects │    ├─ Dark Theme  │
+         ┌─ Footer   ├─ About    │    └──────────────┘
+         │           ├─ Focus    │
+         │           └─ Contact  │
+         │                       │
+         ▼                       ▼
+    ┌────────────┐      ┌──────────────┐
+    │   Routes   │      │   Widgets    │
+    │ Navigation │      │  Reusable    │
+    └────────────┘      │ Components   │
+                        └──────────────┘
+```
+
+### Component Architecture
+
+```mermaid
+graph TD
+    App["PortfolioApp"]
+    App --> ThemeProvider["ThemeProvider<br/>(Dark/Light Mode)"]
+    App --> Routes["Navigation Routes"]
+    
+    Routes --> Splash["SplashScreen<br/>(3D Cube)"]
+    Routes --> Home["HomePage"]
+    Routes --> Projects["ProjectsPage"]
+    Routes --> About["AboutPage"]
+    Routes --> Focus["FocusPage"]
+    Routes --> Contact["ContactPage"]
+    
+    Home --> Hero["Hero Section"]
+    Home --> Navbar["Navbar"]
+    Hero --> TypingAnim["Typing Animation"]
+    Hero --> CTA["See Project Button"]
+    
+    Projects --> Filter["Category Filter"]
+    Projects --> Cards["Project Cards"]
+    Cards --> Modal["Detail Modal"]
+    
+    About --> Bio["Bio Section"]
+    About --> Skills["Skill Badges"]
+    
+    Contact --> Form["Contact Form"]
+    Contact --> Social["Social Links"]
+    
+    style App fill:#e3f2fd
+    style Splash fill:#fff3e0
+    style Modal fill:#e8f5e8
+    style ThemeProvider fill:#f3e5f5
 ```
 
 ---
 
-## 🚀 Installation
+## 🔄 Alur Kerja & Navigation
+
+### Navigation Flow Diagram
+
+```mermaid
+flowchart TD
+    START["App Start"] --> SPLASH["SplashScreen<br/>(3D Cube)"]
+    SPLASH -->|3 detik| HOME["HomePage<br/>(Hero + Navbar)"]
+    
+    HOME -->|See Project| PROJECTS["ProjectsPage"]
+    HOME -->|Navbar| ABOUT["AboutPage"]
+    HOME -->|Navbar| FOCUS["FocusPage"]
+    HOME -->|Navbar| CONTACT["ContactPage"]
+    
+    PROJECTS -->|Filter| FILTERED["Filtered Projects"]
+    FILTERED -->|Click Card| MODAL["Project Modal"]
+    MODAL -->|Back| PROJECTS
+    
+    ABOUT -.->|Navbar| HOME
+    FOCUS -.->|Navbar| HOME
+    CONTACT -.->|Submit| HOME
+    
+    classDef start fill:#ffcdd2,stroke:#000,stroke-width:2px
+    classDef process fill:#c8e6c9,stroke:#000,stroke-width:2px
+    classDef modal fill:#bbdefb,stroke:#000,stroke-width:2px
+    
+    class START,SPLASH start
+    class HOME,PROJECTS,ABOUT,FOCUS,CONTACT process
+    class MODAL modal
+```
+
+### State Management Flow
+
+```
+ThemeProvider (extends ChangeNotifier)
+    │
+    ├─ isDarkMode: bool
+    ├─ toggleTheme(): void
+    │
+    └─ Consumer<ThemeProvider>
+        │
+        ├─ Read isDarkMode value
+        ├─ Apply corresponding theme
+        ├─ Notify listeners on change
+        └─ Persist theme preference
+```
+
+---
+
+## ⚙️ Instalasi
 
 ### 1. Clone Repository
+
 ```bash
 git clone https://github.com/ficrammanifur/flutter-interactive-portfolio.git
 cd flutter-interactive-portfolio
 ```
 
 ### 2. Install Flutter (Jika belum)
+
 ```bash
-# Download Flutter SDK dari https://flutter.dev/docs/get-started/install
-# Atau gunakan FVM (Flutter Version Manager) untuk multiple versions:
+# Download dari https://flutter.dev/docs/get-started/install
+# Atau gunakan FVM:
 fvm install 3.10.0
 fvm use 3.10.0
 ```
 
 ### 3. Install Dependencies
+
 ```bash
-# Get all dependencies
+flutter clean
 flutter pub get
-
-# Install specific package (optional)
-flutter pub add flutter_cube
-
-# Update dependencies
 flutter pub upgrade
 ```
 
-### 4. Setup Project
+### 4. Create Assets Directories
+
 ```bash
-# Clean project (recommended)
-flutter clean
-
-# Get dependencies again
-flutter pub get
-
-# Generate any required code
-flutter pub run build_runner build
+mkdir -p assets/images
+mkdir -p assets/icons
+mkdir -p assets/models_3d
 ```
 
-### 5. Run Application
+### 5. Konfigurasi Project Data
 
-#### For Web
-```bash
-# Run di browser dengan hot reload
-flutter run -d chrome
+Edit beberapa file untuk kustomisasi:
 
-# Build production web
-flutter build web --release
+**lib/utils/constants.dart:**
+```dart
+const String YOUR_NAME = "Your Name";
+const String YOUR_EMAIL = "your@email.com";
+const String YOUR_GITHUB = "https://github.com/yourusername";
+const String YOUR_WHATSAPP = "https://wa.me/62xxxxxxxxx";
 ```
 
-#### For Android
-```bash
-# Run di Android emulator/device
-flutter run
-
-# Build APK
-flutter build apk --release
-
-# Build App Bundle
-flutter build appbundle --release
-```
-
-#### For iOS (macOS only)
-```bash
-# Run di iOS simulator
-flutter run -d ios
-
-# Build iOS app
-flutter build ios --release
+**lib/models/project_model.dart:**
+```dart
+class Project {
+  final String id;
+  final String title;
+  final String description;
+  final String category;
+  final List<String> techStack;
+  final String? imageUrl;
+  final String? liveUrl;
+  final String? githubUrl;
+}
 ```
 
 ---
 
-## 📂 Project Structure
+## 🚀 Cara Menjalankan
+
+### Run on Web
+
+```bash
+# Development mode (dengan hot reload)
+flutter run -d chrome
+
+# Production build
+flutter build web --release
+
+# Output: build/web/
+```
+
+### Run on Other Devices
+
+```bash
+# List available devices
+flutter devices
+
+# Run on Android
+flutter run -d android
+
+# Run on iOS (macOS only)
+flutter run -d ios
+```
+
+### Hot Reload & Debugging
+
+```bash
+# Saat app running:
+r    # Hot reload
+R    # Hot restart
+q    # Quit
+
+# Launch DevTools
+flutter pub global activate devtools
+flutter pub global run devtools
+```
+
+---
+
+## 🎨 Kustomisasi
+
+### 1. Customize Colors
+
+Edit **lib/themes/light_theme.dart** & **lib/themes/dark_theme.dart:**
+
+```dart
+final lightTheme = ThemeData(
+  useMaterial3: true,
+  colorScheme: ColorScheme.fromSeed(
+    seedColor: Color(0xFF6366F1),  // Primary color
+    brightness: Brightness.light,
+  ),
+);
+```
+
+### 2. Update Typography
+
+Edit **lib/app.dart** untuk customize Google Fonts:
+
+```dart
+import 'package:google_fonts/google_fonts.dart';
+
+GoogleFonts.poppins(
+  fontSize: 32,
+  fontWeight: FontWeight.bold,
+)
+```
+
+### 3. Add Images & Icons
+
+```bash
+# Simpan di assets/images/ dan assets/icons/
+# Reference dalam code:
+
+Image.asset('assets/images/project.png')
+SvgPicture.asset('assets/icons/github.svg')
+```
+
+### 4. Update Project Data
+
+Edit masing-masing page atau maintain centralized data model dengan semua project information.
+
+---
+
+## 📦 Deployment
+
+### Deploy ke Vercel
+
+```bash
+flutter build web --release
+npm i -g vercel
+vercel
+```
+
+### Deploy ke Firebase Hosting
+
+```bash
+npm i -g firebase-tools
+firebase login
+firebase init hosting
+flutter build web --release
+firebase deploy
+```
+
+### Deploy ke Netlify
+
+```bash
+netlify deploy --prod --dir=build/web
+```
+
+### Deploy ke GitHub Pages
+
+```bash
+flutter build web --release --base-href=/flutter-portfolio/
+# Configure GitHub Pages di repository settings
+```
+
+---
+
+## ⚡ Performance Tips
+
+### Asset Optimization
+
+```dart
+// Use WebP format untuk web images (lebih kecil)
+// Optimize SVG dengan SVGO tools
+// Lazy load images:
+precacheImage(AssetImage('assets/images/large.png'), context);
+```
+
+### Widget Performance
+
+```dart
+// Gunakan const constructor
+const MyWidget()
+
+// Gunakan RepaintBoundary untuk expensive widgets
+RepaintBoundary(
+  child: ExpensiveWidget(),
+)
+```
+
+### Animation Performance
+
+```dart
+// Gunakan SingleTickerProviderStateMixin
+with SingleTickerProviderStateMixin
+
+// Hindari heavy computation dalam build()
+```
+
+---
+
+## 🐞 Troubleshooting
+
+### Build Errors
+
+**Error: "Cannot find widget library"**
+```bash
+flutter clean
+flutter pub get
+flutter pub upgrade
+```
+
+**Error: "Chrome not found"**
+```bash
+flutter config --enable-web
+flutter run -d chrome
+```
+
+### Runtime Issues
+
+**Issue: Theme tidak berubah**
+```dart
+// Pastikan notifyListeners() dipanggil:
+void toggleTheme() {
+  _isDarkMode = !_isDarkMode;
+  notifyListeners();  // Important!
+}
+```
+
+**Issue: Animasi lag/jitter**
+```dart
+// Gunakan SingleTickerProviderStateMixin untuk efficiency
+with SingleTickerProviderStateMixin
+```
+
+**Issue: Memory leak dengan AnimationController**
+```dart
+@override
+void dispose() {
+  _controller.dispose();
+  super.dispose();
+}
+```
+
+### Deployment Issues
+
+**Issue: Build size terlalu besar**
+```bash
+flutter build web --release --web-resources-cdn
+```
+
+**Issue: CORS error saat API call**
+```
+Backend harus enable CORS headers
+atau gunakan proxy
+```
+
+---
+
+## 📂 Struktur Folder
 
 ```
 flutter-interactive-portfolio/
-├── assets/                          # App assets
-│   ├── images/                      # Image files
-│   ├── icons/                       # Icon files
-│   └── models_3d/                   # 3D model files
-│
 ├── lib/
-│   ├── main.dart                    # App entry point
-│   ├── app.dart                     # Main app configuration
+│   ├── main.dart                    # Entry point
+│   ├── app.dart                     # App configuration
 │   │
-│   ├── themes/                      # Theme management
-│   │   ├── theme_provider.dart      # Theme state provider
-│   │   ├── light_theme.dart         # Light theme configuration
-│   │   └── dark_theme.dart          # Dark theme configuration
-│   │
-│   ├── pages/                       # App pages/screens
-│   │   ├── splash_screen.dart       # 3D splash screen
-│   │   ├── home_page.dart           # Home page dengan hero section
-│   │   ├── projects_page.dart       # Projects listing & filtering
-│   │   ├── about_page.dart          # About page dengan skills
-│   │   ├── focus_page.dart          # Tech stack & focus areas
-│   │   └── contact_page.dart        # Contact information & form
+│   ├── pages/                       # App pages
+│   │   ├── splash_screen.dart      # 3D splash
+│   │   ├── home_page.dart          # Hero section
+│   │   ├── projects_page.dart      # Projects grid
+│   │   ├── about_page.dart         # Bio + skills
+│   │   ├── focus_page.dart         # Tech stack
+│   │   └── contact_page.dart       # Contact form
 │   │
 │   ├── widgets/                     # Reusable components
-│   │   ├── navbar.dart              # Navigation bar
-│   │   ├── footer.dart              # Footer component
-│   │   ├── project_card.dart        # Project card widget
-│   │   ├── project_modal.dart       # Project detail modal
-│   │   ├── typing_text.dart         # Typing animation widget
-│   │   └── skill_badge.dart         # Skill badge component
+│   │   ├── navbar.dart             # Navigation
+│   │   ├── footer.dart             # Footer
+│   │   ├── project_card.dart       # Project card
+│   │   ├── project_modal.dart      # Detail modal
+│   │   ├── typing_text.dart        # Typing animation
+│   │   └── skill_badge.dart        # Skill badge
 │   │
 │   ├── models/                      # Data models
-│   │   ├── project_model.dart       # Project data model
-│   │   └── skill_model.dart         # Skill data model
+│   │   ├── project_model.dart      # Project class
+│   │   └── skill_model.dart        # Skill class
 │   │
-│   └── utils/                       # Utility functions
-│       ├── constants.dart           # App constants
-│       └── colors.dart              # Color palette
+│   ├── themes/                      # Theme system
+│   │   ├── theme_provider.dart     # Theme state
+│   │   ├── light_theme.dart        # Light theme
+│   │   └── dark_theme.dart         # Dark theme
+│   │
+│   └── utils/                       # Utilities
+│       ├── constants.dart          # App constants
+│       └── colors.dart             # Color palette
 │
-├── pubspec.yaml                     # Flutter dependencies
-├── pubspec.lock                     # Locked dependency versions
-├── README.md                        # This file
-└── .gitignore                       # Git ignore rules
+├── assets/
+│   ├── images/                     # Project images
+│   ├── icons/                      # SVG icons
+│   └── models_3d/                  # 3D assets
+│
+├── pubspec.yaml                    # Dependencies
+├── README.md                       # Documentation
+└── LICENSE                         # MIT License
 ```
 
 ---
 
-## 🎨 Design & UI Flow
-
-### Navigation Flow Diagram
-```mermaid
-graph TD
-    A[Splash Screen] -->|3 seconds| B[Home Page]
-    B -->|See Project| C[Projects Page]
-    B -->|Navbar| D[About Page]
-    B -->|Navbar| E[Focus Page]
-    B -->|Navbar| F[Contact Page]
-    C -->|Filter| G[Filtered Projects]
-    G -->|Click Card| H[Project Modal]
-    D -->|View Skills| I[Skill Details]
-    F -->|Submit Form| J[Contact Submitted]
-    
-    style A fill:#e1f5fe
-    style B fill:#f3e5f5
-    style C fill:#e8f5e8
-    style H fill:#fff3e0
-    style J fill:#fce4ec
-```
-
-### Component Hierarchy
-```mermaid
-graph TD
-    App["🎯 PortfolioApp"]
-    App --> LP["📄 Layout Provider"]
-    LP --> Nav["🧭 Navbar"]
-    LP --> Pages["📑 Pages"]
-    LP --> Footer["🔗 Footer"]
-    
-    Pages --> Home["🏠 HomePage"]
-    Pages --> Projects["📁 ProjectsPage"]
-    Pages --> About["👤 AboutPage"]
-    Pages --> Focus["⭐ FocusPage"]
-    Pages --> Contact["📞 ContactPage"]
-    
-    Home --> Hero["🌟 Hero Section"]
-    Home --> CTA["🔘 Call-to-Action"]
-    
-    Projects --> Filter["🔽 Category Filter"]
-    Projects --> Cards["📇 Project Cards"]
-    Cards --> Modal["📝 Project Modal"]
-    
-    style App fill:#e3f2fd
-    style Nav fill:#fff3e0
-    style Footer fill:#f3e5f5
-    style Modal fill:#e8f5e8
-```
-
-### Animation Flow
-```mermaid
-graph LR
-    A["🌑 Splash Start"] -->|Cube Rotate| B["🔄 3D Animation"]
-    B -->|Scale Zoom| C["📈 Scale Animation"]
-    C -->|Progress| D["⏳ Loading Bar"]
-    D -->|Fade Out| E["✨ Transition"]
-    E -->|Navigate| F["🏠 Home Page"]
-    
-    style A fill:#ffcdd2
-    style B fill:#f8bbd9
-    style C fill:#e1bee7
-    style F fill:#c8e6c9
-```
-
----
-
-## 🎯 Key Features Implementation
-
-### 1. 3D Splash Screen dengan Flutter Cube
-```dart
-// lib/pages/splash_screen.dart
-
-import 'package:flutter_cube/flutter_cube.dart';
-
-class SplashScreen extends StatefulWidget {
-  @override
-  State<SplashScreen> createState() => _SplashScreenState();
-}
-
-class _SplashScreenState extends State<SplashScreen>
-    with TickerProviderStateMixin {
-  late AnimationController _rotationController;
-  late AnimationController _scaleController;
-
-  @override
-  void initState() {
-    super.initState();
-    _initializeAnimations();
-    _navigateToHome();
-  }
-
-  void _initializeAnimations() {
-    _rotationController = AnimationController(
-      duration: Duration(seconds: 3),
-      vsync: this,
-    )..repeat();
-
-    _scaleController = AnimationController(
-      duration: Duration(seconds: 3),
-      vsync: this,
-    )..forward();
-  }
-
-  void _navigateToHome() {
-    Future.delayed(Duration(seconds: 3), () {
-      Navigator.of(context).pushReplacementNamed('/');
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            // 3D Cube animation
-            ScaleTransition(
-              scale: _scaleController,
-              child: Cube(
-                onSceneCreated: (Scene scene) {
-                  // Cube setup
-                },
-              ),
-            ),
-            SizedBox(height: 40),
-            // Loading bar
-            LinearProgressIndicator(
-              minHeight: 4,
-              backgroundColor: Colors.grey[300],
-              valueColor: AlwaysStoppedAnimation(Colors.blue),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
-  @override
-  void dispose() {
-    _rotationController.dispose();
-    _scaleController.dispose();
-    super.dispose();
-  }
-}
-```
-
-### 2. Typing Animation Component
-```dart
-// lib/widgets/typing_text.dart
-
-class TypingText extends StatefulWidget {
-  final String text;
-  final Duration speed;
-
-  const TypingText({
-    required this.text,
-    this.speed = const Duration(milliseconds: 100),
-  });
-
-  @override
-  State<TypingText> createState() => _TypingTextState();
-}
-
-class _TypingTextState extends State<TypingText> {
-  String displayedText = '';
-  int currentIndex = 0;
-
-  @override
-  void initState() {
-    super.initState();
-    _startTyping();
-  }
-
-  void _startTyping() {
-    Future.delayed(Duration(milliseconds: 500), () {
-      _typeNextCharacter();
-    });
-  }
-
-  void _typeNextCharacter() {
-    if (currentIndex < widget.text.length) {
-      setState(() {
-        displayedText += widget.text[currentIndex];
-        currentIndex++;
-      });
-      Future.delayed(widget.speed, _typeNextCharacter);
-    }
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      displayedText,
-      style: Theme.of(context).textTheme.headlineSmall,
-    );
-  }
-}
-```
-
-### 3. Dark/Light Theme Toggle
-```dart
-// lib/themes/theme_provider.dart
-
-class ThemeProvider extends ChangeNotifier {
-  bool _isDarkMode = false;
-
-  bool get isDarkMode => _isDarkMode;
-
-  void toggleTheme() {
-    _isDarkMode = !_isDarkMode;
-    notifyListeners();
-  }
-
-  ThemeData getTheme() {
-    return _isDarkMode ? darkTheme : lightTheme;
-  }
-}
-```
-
-### 4. Project Filtering System
-```dart
-// lib/pages/projects_page.dart
-
-class ProjectsPage extends StatefulWidget {
-  @override
-  State<ProjectsPage> createState() => _ProjectsPageState();
-}
-
-class _ProjectsPageState extends State<ProjectsPage> {
-  String selectedCategory = 'All';
-
-  List<Project> get filteredProjects {
-    if (selectedCategory == 'All') return allProjects;
-    return allProjects
-        .where((p) => p.category == selectedCategory)
-        .toList();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        // Category filter
-        Wrap(
-          spacing: 10,
-          children: ['All', 'Mobile', 'Web', 'AI & Robotics', 'AI & ML', 'IoT']
-              .map((category) => FilterChip(
-                    label: Text(category),
-                    selected: selectedCategory == category,
-                    onSelected: (selected) {
-                      setState(() => selectedCategory = category);
-                    },
-                  ))
-              .toList(),
-        ),
-        // Filtered projects grid
-        GridView.builder(
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 3,
-          ),
-          itemCount: filteredProjects.length,
-          itemBuilder: (context, index) =>
-              ProjectCard(project: filteredProjects[index]),
-        ),
-      ],
-    );
-  }
-}
-```
-
----
-
-## 🎮 Usage Guide
-
-### Navigating the Portfolio
-1. **Splash Screen** - Tunggu hingga animasi selesai (3 detik)
-2. **Home Page** - Klik "See Project" untuk melihat daftar proyek
-3. **Projects Page** - Gunakan filter kategori untuk memilah proyek
-4. **Click Project Card** - Modal detail akan muncul dengan informasi lengkap
-5. **Other Pages** - Gunakan navbar untuk navigasi ke About, Focus, Contact
-
-### Customization
-1. **Update Project Data** - Edit `lib/models/project_model.dart`
-2. **Change Colors** - Modify `lib/utils/colors.dart`
-3. **Add Skills** - Update `lib/pages/about_page.dart`
-4. **Contact Info** - Edit `lib/pages/contact_page.dart`
-
----
-
-## 🌐 Deployment
-
-### Deploy ke Web (Vercel)
-```bash
-# Build untuk web
-flutter build web --release
-
-# Deploy ke Vercel
-vercel
-
-# atau gunakan GitHub Pages
-# Push ke repo dan configure GitHub Pages
-```
-
-### Deploy ke App Store / Google Play
-```bash
-# Build APK untuk Android
-flutter build apk --release
-
-# Build App Bundle
-flutter build appbundle --release
-
-# Build untuk iOS
-flutter build ios --release
-```
-
----
-
-## 🧪 Testing
-
-```bash
-# Run unit tests
-flutter test
-
-# Run integration tests
-flutter test integration_test/
-
-# Run dengan coverage
-flutter test --coverage
-```
-
----
-
-## 📊 Performance Tips
-
-1. **Image Optimization** - Gunakan WebP format untuk web
-2. **Lazy Loading** - Load images saat dibutuhkan
-3. **Code Splitting** - Pisahkan kode per page
-4. **Cache Management** - Implement caching strategy
-5. **Animation Performance** - Gunakan `SingleTickerProviderStateMixin`
-
----
-
-## 🤝 Contributing
+## 🤝 Kontribusi
 
 1. Fork repository
 2. Create feature branch (`git checkout -b feature/amazing-feature`)
@@ -581,43 +566,33 @@ flutter test --coverage
 
 ---
 
-## 📝 License
+## 👤 Pengembang
 
-This project is licensed under the **MIT License** - see the [LICENSE](./LICENSE) file for details.
-
----
-
-## 👤 Author
-
-**[Ficrammanifur]** - *Portfolio Developer*
+**Ficram Manifur Farissa**
+- Prodi: Teknik Elektro – Universitas Cendekia Abditama
 - GitHub: [@ficrammanifur](https://github.com/ficrammanifur)
-- Email: ficramm@example.com
-- Portfolio: [portfolio.com](https://portfolio.com)
+- Portfolio: [ficrammanifur.github.io](https://ficrammanifur.github.io)
+- Email: ficramm@gmail.com
+
+### Acknowledgments
+
+- Flutter & Dart teams untuk framework yang awesome
+- Flutter Cube untuk 3D rendering
+- Google Fonts untuk typography
+- Flutter Animate untuk smooth animations
+- Provider untuk state management
+- Open source community untuk support
 
 ---
 
-## 🙏 Acknowledgments
+## 📄 Lisensi
 
-- **Flutter & Dart** teams untuk framework yang awesome
-- **Flutter Cube** untuk 3D rendering capabilities
-- **Google Fonts** untuk typography options
-- **Flutter Animate** untuk smooth animations
-- **Provider** untuk state management solution
-- Open source community untuk support dan resources
-
----
-
-## 📞 Support
-
-Jika ada pertanyaan atau issues:
-1. Check existing issues di GitHub
-2. Buat issue baru dengan deskripsi detail
-3. Hubungi via email
+Project ini menggunakan **MIT License** - Lihat file [LICENSE](LICENSE) untuk detail lengkap.
 
 ---
 
 <div align="center">
-  
+
 **Crafted with 🎨 and ❤️ using Flutter**
 
 [⬆ Back to Top](#flutter-interactive-portfolio-)
