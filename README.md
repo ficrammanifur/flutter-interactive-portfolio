@@ -15,22 +15,22 @@
 
 ## 📋 Daftar Isi
 
-- [Mengapa Flutter untuk Portfolio](#mengapa-flutter-untuk-portfolio)
-- [Demo Singkat](#demo-singkat)
-- [Fitur Utama](#fitur-utama)
-- [Tech Stack & Dependencies](#tech-stack--dependencies)
-- [Arsitektur Aplikasi](#arsitektur-aplikasi)
-- [Alur Kerja & Navigation](#alur-kerja--navigation)
-- [Instalasi](#instalasi)
-- [Cara Menjalankan](#cara-menjalankan)
-- [Kustomisasi](#kustomisasi)
-- [Deployment](#deployment)
-- [Performance Tips](#performance-tips)
-- [Troubleshooting](#troubleshooting)
-- [Struktur Folder](#struktur-folder)
-- [Kontribusi](#kontribusi)
-- [Pengembang](#pengembang)
-- [Lisensi](#lisensi)
+- [Mengapa Flutter untuk Portfolio](#-mengapa-flutter-untuk-portfolio)
+- [Demo Singkat](#-demo-singkat)
+- [Fitur Utama](#-fitur-utama)
+- [Tech Stack & Dependencies](#-tech-stack--dependencies)
+- [Arsitektur Aplikasi](#-arsitektur-aplikasi)
+- [Alur Kerja & Navigation](#-alur-kerja--navigation)
+- [Instalasi](#-instalasi)
+- [Cara Menjalankan](#-cara-menjalankan)
+- [Kustomisasi](#-kustomisasi)
+- [Deployment](#-deployment)
+- [Performance Tips](#-performance-tips)
+- [Troubleshooting](#-troubleshooting)
+- [Struktur Folder](#-struktur-folder)
+- [Kontribusi](#-kontribusi)
+- [Pengembang](#-pengembang)
+- [Lisensi](#-lisensi)
 
 
 ---
